@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', Courier, monospace;
+}
+
+body {
+    background: #bbc6fa;
+}
+
+.quote_box {
+    background: #fff;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 10px 20px 20px rgba(0, 0, 0,0.1);
+}
+
+.quote_box h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.quote_box h2::after {
+    content: '';
+    display: block;
+    width: 75px;
+    height: 2px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(23, 124, 229);
+    margin: 20px auto;
+}
+
+.quote_box blockquote {
+    font-size: 26px;
+    min-height: 110px;
+
+}
+
+.quote_box blockquote::before,
+.quote_box blockquote::after {
+    content: '"';
+}
+
+.quote_box span {
+    display: flex;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.quote_box span::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    background: rgb(23, 124, 229);
+}
+.quote_box div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+.quote_box button{
+    background: #000;
+    color: #fff;
+    border-radius: 25px;
+    border: 1px soolid rgb(23, 124, 229);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+button i{
+    color: #fff;
+    font-size: 18px;
+    margin-right: 7px;
+}
